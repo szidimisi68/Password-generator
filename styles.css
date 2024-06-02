@@ -8,12 +8,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
+.divcontainer {
     text-align: center;
     background-color: #222;
     padding: 20px;
-    border-radius: 10px;
+    margin-top: 15px;
     width: 300px;
+}
+
+h1{
+    font-size: 22px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .password-output {
@@ -33,9 +40,9 @@ body {
 
 #copyBtn {
     padding: 10px;
-    background-color: #4caf50;
+    color: #67c56b;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -46,6 +53,13 @@ body {
 
 #length {
     width: 100%;
+    margin-top: 10px;
+}
+
+#lengthVal{
+    float: right;
+    color: #67c56b;
+    font-size: 18px;
 }
 
 .checkboxes {
@@ -75,8 +89,48 @@ label {
 #generateBtn {
     width: 100%;
     padding: 10px;
-    background-color: #4caf50;
+    background-color: #67c56b;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
+
+.gg-copy {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 14px;
+    height: 18px;
+    border: 2px solid;
+    margin-left: -5px;
+    margin-top: -4px
+  }
+  .gg-copy::after,
+  .gg-copy::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+  }
+  .gg-copy::before {
+    background:
+        linear-gradient( to left,
+            currentColor 5px, transparent 0)
+            no-repeat right top/5px 2px,
+        linear-gradient( to left,
+            currentColor 5px, transparent 0)
+            no-repeat left bottom/ 2px 5px;
+    box-shadow: inset -4px -4px 0 -2px;
+    bottom: -6px;
+    right: -6px;
+    width: 14px;
+    height: 18px
+  }
+  .gg-copy::after {
+    width: 6px;
+    height: 2px;
+    background: currentColor;
+    left: 2px;
+    top: 2px;
+    box-shadow: 0 4px 0,0 8px 0
+  }
